@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Update apt-get
-        run: sudo apt update && apt upgrade
+        run: sudo apt update && sudo apt upgrade
 
       - name: Install packages
         run: sudo apt install python-tk python3-tables \
