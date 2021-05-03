@@ -19,9 +19,9 @@ jobs:
 
       - name: Install packages
         run: sudo apt-get install python-tk python3-tables \
-                  locales wget gcc g++ build-essential libncurses-dev \
-                  libpython-dev cython libx11-dev git flex automake \
-                  libtool libxext-dev libncurses-dev make 
+                  wget gcc g++ build-essential libncurses-dev \
+                  cython libx11-dev git flex automake \
+                  libxext-dev libncurses-dev make 
 
 
       - name: Install dependencies
