@@ -18,11 +18,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Update apt-get
-        run: sudo apt-get update
+        run: sudo apt update && apt upgrade
 
       - name: Install packages
-        run: sudo apt-get install python-tk python3-tables \
-                  wget gcc g++ build-essential libncurses-dev \
+        run: sudo apt install python-tk python3-tables \
+                  gcc g++ build-essential libncurses-dev \
                   cython libx11-dev git flex automake \
                   libxext-dev libncurses-dev make 
 
