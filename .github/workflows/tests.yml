@@ -21,9 +21,7 @@ jobs:
         run: sudo apt-get update
 
       - name: Install packages
-        run: sudo apt-get install python-tk python3-tables \
-                                  git flex automake
-
+        run: sudo apt-get install python-tk python3-tables
 
       - name: Install dependencies
         run: |
