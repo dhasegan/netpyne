@@ -22,7 +22,7 @@ jobs:
 
       - name: Install packages
         run: sudo apt-get install python-tk python3-tables \
-                  libncurses-dev  git flex automake libncurses-dev
+                  libncurses-dev  git flex automake
 
 
       - name: Install dependencies
