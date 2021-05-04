@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Run-Tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     strategy:
       matrix:
@@ -17,12 +17,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Update apt
-        run: sudo apt update && sudo apt upgrade
+      - name: Update apt-get
+        run: sudo apt-get update && sudo apt-get upgrade
 
       - name: Install packages
-        run: sudo apt install python-tk python-tables python-sympy \
-                  wget build-essential libncurses-dev \
+        run: sudo apt-get install python-tk python3-tables \
+                  build-essential libncurses-dev \
                   libx11-dev git flex automake \
                   libxext-dev libncurses-dev
 
