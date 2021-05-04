@@ -7,3 +7,4 @@ tables
 bokeh
 pyneuroml
 neuron
+pytest
